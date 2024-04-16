@@ -5,6 +5,7 @@
 #include <sstream>
 #include <vector>
 
+//comment
 // Make code easier to type with "using namespace"
 using namespace sf;
 using namespace std;
@@ -31,7 +32,7 @@ int main()
     {
         window.close();
         // error...
-        //¯\_(-_-)_/¯
+        //Â¯\_(-_-)_/Â¯
     }
     Text instructions;
     instructions.setFont(instructionsFont);
