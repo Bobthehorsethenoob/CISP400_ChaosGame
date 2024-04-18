@@ -6,6 +6,7 @@
 #include <vector>
 #include <cmath>
 #include "button.h"
+#include <ctime>
 //comment3
 // Make code easier to type with "using namespace"
 using namespace sf;
@@ -22,7 +23,7 @@ int main()
         Vector2f location;
         Color color;
     };
-
+    srand(time(0));
     Color mainColor(rand() % 230 + 26, rand() % 230 + 26, rand() % 230 + 26);
 
     int btnClick = 0;
@@ -33,7 +34,7 @@ int main()
 
     vector<Vector2f> vertices;
     vector<ColoredPoint> points;
-    srand(0);
+
     Font instructionsFont;
     if (!instructionsFont.loadFromFile("Starcruiser.ttf"))
     {
